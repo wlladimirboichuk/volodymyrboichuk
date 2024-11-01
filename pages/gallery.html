@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tomorrowland Festival Gallery">
+    <meta name="keywords" content="Tomorrowland, gallery, photos, festival">
+    <meta name="author" content="Volodymyr Boichuk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Tomorrowland</title>
+    <style>
+        .modal {
+            display: none; /* Скрыто по умолчанию */
+            position: fixed; /* Оверлей */
+            z-index: 1; /* Над всем остальным */
+            left: 0;
+            top: 0;
+            width: 100%; /* Полная ширина */
+            height: 100%; /* Полная высота */
+            overflow: auto; /* Прокрутка, если нужно */
+            background-color: rgb(0, 0, 0); /* Черный фон */
+            background-color: rgba(0, 0, 0, 0.9); /* Полупрозрачный фон */
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%; /* Ширина модального окна */
+            max-width: 700px; /* Максимальная ширина */
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 align="center">Tomorrowland Gallery</h1>
+        <hr>
+        <nav>
+            <ul type="square" align="left">
+                <li><a href="../index.html">Home</a></li>
+                <li>&bull; <a href="gallery.html">Gallery</a></li></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <hr>
+    </header>
+
+    <main>
+        <h2 align="center">Festival Moments</h2>
+        <div align="center">
+            <div style="display: inline-block; margin: 10px;">
+                <img src="../photo/stage1.jpg" alt="Main Stage" width="300" height="200" onclick="openModal(this.src)">
+            </div>
+            <div style="display: inline-block; margin: 10px;">
+                <img src="../photo/stage2.jpg" alt="Night Show" width="300" height="200" onclick="openModal(this.src)">
+            </div>
+            <div style="display: inline-block; margin: 10px;">
+                <img src="../photo/crowd1.jpg" alt="Happy Crowd" width="300" height="200" onclick="openModal(this.src)">
+            </div>
+            <div style="display: inline-block; margin: 10px;">
+                <img src="../photo/crowd2.webp" alt="Festival Atmosphere" width="300" height="200" onclick="openModal(this.src)">
+            </div>
+        </div>
+    </main>
+
+    <!-- Модальное окно -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <footer align="center">
+        <hr>
+        <p>© 2024 Tomorrowland Festival</p>
+    </footer>
+
+    <script>
+        function openModal(src) {
+            document.getElementById('myModal').style.display = "block";
+            document.getElementById('img01').src = src;
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        // Закрытие модального окна при клике вне изображения
+        window.onclick = function(event) {
+            if (event.target === document.getElementById('myModal')) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
