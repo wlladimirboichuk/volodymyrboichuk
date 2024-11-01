@@ -1,3 +1,0 @@
-First commit for practice
-This text for second commit
-Another commit

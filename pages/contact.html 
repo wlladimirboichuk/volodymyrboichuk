@@ -1,0 +1,64 @@
+<!-- pages/contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Tomorrowland Festival">
+    <meta name="keywords" content="Tomorrowland, contact, festival, music">
+    <meta name="author" content="Volodymyr Boichuk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Tomorrowland</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Contact Tomorrowland</h1>
+        <hr>
+        <nav>
+            <ul type="square">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Get in Touch</h2>
+        <form>
+            <ol type="1">
+                <li>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </li>
+                
+                <li>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </li>
+                
+                <li>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="30"></textarea>
+                </li>
+                
+                <li>
+                    <button type="submit">Send Message</button>
+                </li>
+            </ol>
+        </form>
+
+        <h3>Festival Location</h3>
+        <address>
+            Tomorrowland Festival<br>
+            <a href="https://goo.gl/maps/location">De Schorre</a><br>
+            Boom, Belgium
+        </address>
+    </main>
+
+    <footer align="center">
+        <hr>
+        <p>© 2024 Tomorrowland Festival</p>
+    </footer>
+</body>
+</html>

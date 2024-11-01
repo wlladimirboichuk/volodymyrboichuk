@@ -1,0 +1,45 @@
+<!-- pages/gallery.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tomorrowland Festival Gallery">
+    <meta name="keywords" content="Tomorrowland, gallery, photos, festival">
+    <meta name="author" content="Volodymyr Boichuk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Tomorrowland</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Tomorrowland Gallery</h1>
+        <hr>
+        <nav>
+            <ul type="circle">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2 align="center">Festival Moments</h2>
+        <table align="center">
+            <tr>
+                <td><img src="../photo/stage1.webp" alt="Main Stage" width="300" align="center"></td>
+                <td><img src="../photo/stage2.webp" alt="Night Show" width="300" align="center"></td>
+            </tr>
+            <tr>
+                <td><img src="../photo/crowd1.webp" alt="Happy Crowd" width="300" align="center"></td>
+                <td><img src="../photo/crowd2.webp" alt="Festival Atmosphere" width="300" align="center"></td>
+            </tr>
+        </table>
+    </main>
+
+    <footer align="center">
+        <hr>
+        <p>© 2024 Tomorrowland Festival</p>
+    </footer>
+</body>
+</html>
